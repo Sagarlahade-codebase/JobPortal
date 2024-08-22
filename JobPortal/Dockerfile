@@ -21,7 +21,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Expose the application port
-EXPOSE 8080
+#EXPOSE 8080
 
 # Copy the built JAR file from the build stage
 COPY --from=build /app/target/jobportal-0.0.1-SNAPSHOT.jar app.jar
